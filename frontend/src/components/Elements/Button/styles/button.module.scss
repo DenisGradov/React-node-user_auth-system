@@ -1,0 +1,12 @@
+.button {
+  padding: 5px 30px;
+  background-color: aqua;
+  border: 1px solid #00000071;
+  border-radius: 100px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+  }
+}
