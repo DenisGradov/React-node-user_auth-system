@@ -1,7 +1,7 @@
 import sqlite3 from "sqlite3";
+sqlite3.verbose();
 import { RegistrationProps } from "../../types/app.types";
 import searchUserIdDb from "./searchUserIdDb";
-sqlite3.verbose();
 const bcrypt = require("bcrypt");
 
 function addUserInDb({

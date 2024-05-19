@@ -6,6 +6,7 @@ import { UserDataProps } from "./components/HomePage/types/HomePage.types";
 import axios from "axios";
 import Registration from "./components/Registration/Registration";
 import Logout from "./components/Logout/Logout";
+import Login from "./components/Login/Login";
 
 function App() {
   const [userData, setUserData] = useState<UserDataProps>({
@@ -31,13 +32,15 @@ function App() {
     //.finally(() => setCheckCookieOnBack(true));
   }, [userData.authorized]);
 
-  useEffect(() => {
-    console.log("User data updated:", userData);
-  }, [userData]);
+  useEffect(() => {}, [userData]);
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage userData={userData} />} />
+        <Route
+          path="/"
+          element={<HomePage setUserData={setUserData} userData={userData} />}
+        />
+        <Route path="/login" element={<Login setUserData={setUserData} />} />
         <Route
           path="/registration"
           element={<Registration setUserData={setUserData} />}

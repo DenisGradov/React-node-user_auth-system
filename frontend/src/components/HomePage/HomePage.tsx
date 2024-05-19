@@ -7,12 +7,10 @@ import styles from "./styles/homePage.module.scss";
 //types
 import { UserDataProps } from "./types/HomePage.types";
 
-const HomePage: React.FC<{
-  userData: UserDataProps;
-}> = ({ userData }) => {
+const HomePage: React.FC<UserDataProps> = ({ userData, setUserData }) => {
   return (
     <div className={styles.wrapper}>
-      <Header userData={userData} />
+      <Header userData={userData} setUserData={setUserData} />
       <Main />
       <Footer />
     </div>

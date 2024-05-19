@@ -9,8 +9,17 @@ export interface RegistrationProps {
 }
 
 export interface searchUserIdDbProps {
-  tableName?: string;
+  tableName: string;
   searchKey?: string;
   searchValue?: string;
   callback?: any;
+}
+export interface LoginUserDataProps {
+  login?: string;
+  password?: string;
+}
+export interface updateCookieProps {
+  tableName: string;
+  login: string;
+  newCookieToken: string;
 }

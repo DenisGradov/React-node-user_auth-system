@@ -1,0 +1,2 @@
+SECRET_KEY_FOR_COOKIE="key"
+DATA_BASE_PATH="./dataBase/dataBase.db"

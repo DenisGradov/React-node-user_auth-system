@@ -1,4 +1,6 @@
+import { UserData, SetUserData } from "../../../app.type";
+
 export interface UserDataProps {
-  authorized: boolean;
-  login?: string;
+  userData: UserData;
+  setUserData: SetUserData;
 }

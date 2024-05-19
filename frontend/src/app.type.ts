@@ -1,6 +1,9 @@
-export interface userData {
+export interface UserData {
   authorized: boolean;
+  login?: string;
 }
-export interface setUserDataProps {
-  setUserData: React.Dispatch<React.SetStateAction<userData>>;
+
+export type SetUserData = React.Dispatch<React.SetStateAction<UserData>>;
+export interface SetUserDataProps {
+  setUserData: SetUserData;
 }

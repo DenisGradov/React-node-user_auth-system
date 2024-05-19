@@ -8,8 +8,8 @@ import { RegistrationProps } from "./types/Registration.types";
 import { RiEyeFill, RiEyeOffFill } from "react-icons/ri";
 import Button from "../Elements/Button/Button";
 import { useNavigate } from "react-router-dom";
-import { setUserDataProps } from "../../app.type";
-const Registration: React.FC<setUserDataProps> = ({ setUserData }) => {
+import { SetUserDataProps } from "../../app.type";
+const Registration: React.FC<SetUserDataProps> = ({ setUserData }) => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [imgError, setImgError] = useState<string | null>(null);
